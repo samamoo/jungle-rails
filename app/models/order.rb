@@ -7,10 +7,4 @@ class Order < ActiveRecord::Base
 
   validates :stripe_charge_id, presence: true
 
-  # validate empty
-
-  # def empty
-  #   if !line_items.present?
-  #     errors.add(:base, :invalid, message: "Your cart cannot be empty!")
-  # end
 end

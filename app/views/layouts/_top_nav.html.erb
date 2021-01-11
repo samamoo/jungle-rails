@@ -30,7 +30,13 @@
           <%= link_to 'About', about_path %>
         </li>
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
+        <div class="navbar-brand">
+        <% if current_user %>
+          <li>Signed in as <%= current_user.first_name %></li>
+        <% end %>
+        </div>
        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 
@@ -48,6 +54,20 @@
             <%= fa_icon "shopping-cart" %> My Cart (<%= cart.size %>)
           <% end %>
         </li>
+
+        <% if current_user %>
+        <li>
+          <%= link_to "Logout", '/logout' %>
+        </li>
+        <% end %>
+        <% if !current_user %>
+        <li>
+          <%= link_to 'Login', '/login' %>
+        </li>
+        <li>
+          <%= link_to 'Signup', '/signup' %>
+        </li>
+        <% end %>
       </ul>
     </div>
   </div>

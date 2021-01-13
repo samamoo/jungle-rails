@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "HomePages", type: :feature do
+RSpec.feature "HomePages", type: :feature, js: true do
 
   #SETUP
   before :each do

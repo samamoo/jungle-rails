@@ -21,11 +21,11 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
     visit root_path
     # Find the first product
     first("article.product").find('h4').click
-    
+
     # DEBUG / VERIFY
     expect(page).to have_content 'Quantity'
     expect(page).to have_css 'h1', :text => 'Apparel'
-    page.save_screenshot
+    # page.save_screenshot
   end
 
 

@@ -1,9 +1,13 @@
 <h1>Login</h1>
+<div class="d-flex flex-column align-items-center">
+  <%= form_tag '/login' do %>
+    <div class="p-2">
+      Email: <%= text_field_tag :email %>
+    </div>
+    <div class="p-2">
+      Password: <%= password_field_tag :password %>
+    </div>
+    <%= submit_tag "Submit" %>
 
-<%= form_tag '/login' do %>
-
-  Email: <%= text_field_tag :email %>
-  Password: <%= password_field_tag :password %>
-  <%= submit_tag "Submit" %>
-
-<% end %>
+  <% end %>
+</div>

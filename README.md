@@ -2,6 +2,14 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+!["Home Page displays all products available"](https://github.com/samamoo/jungle-rails/blob/master/docs/Screen%20Shot%202021-01-13%20at%201.33.38%20PM.png?raw=true)
+!["Product details page"](https://github.com/samamoo/jungle-rails/blob/master/docs/Screen%20Shot%202021-01-13%20at%201.34.03%20PM.png?raw=true)
+!["Cart of products"](https://github.com/samamoo/jungle-rails/blob/master/docs/Screen%20Shot%202021-01-13%20at%201.34.20%20PM.png?raw=true)
+!["Payment prompt using Stripe"](https://github.com/samamoo/jungle-rails/blob/master/docs/Screen%20Shot%202021-01-13%20at%201.34.39%20PM.png?raw=true)
+
+Gifs of App in Action
+!["Gif of adding a product to the cart"](https://github.com/samamoo/jungle-rails/blob/master/docs/jungle_add_cart.gif?raw=true)
+!["Gif of making a payment"](https://github.com/samamoo/jungle-rails/blob/master/docs/jungle_add_cart.gif?raw=true)
 
 ## Setup
 
